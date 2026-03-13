@@ -55,17 +55,23 @@ Wichtig:
 
 ## Anschluss des DS18B20
 
-DS18B20         ESP32-S3
-------------------------
-VCC    -------> 3.3V
-GND    -------> GND
-DATA   -------> GPIO 4
-           |
-         4.7kΩ
-           |
-         3.3V
-
+![ESP32 ds18b20_anschluss](images/esp32s3ds18b20_anschluss.png)
 
 ## Log File
 ![ESP32 USB Logger](images/esp32s3_logger_file.png)
+
+
+## Serial Monitor
+
 ![SerialMonitor](images/SerialMonitor.png)
+
+
+## Codebasis
+
+Dieses Projekt basiert auf dem offiziellen **ESP32 USB Mass Storage Beispiel (USBMSC)** aus dem Arduino-ESP32 Core.
+
+Das ursprüngliche Beispiel zeigt, wie ein ESP32-S3 als **USB-Massenspeichergerät** (USB MSC) am Computer erscheint.
+
+Originalquelle:
+
+https://github.com/espressif/arduino-esp32/tree/master/libraries/USB/examples/USBMSC
